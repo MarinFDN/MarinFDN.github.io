@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/styleform.css">
+    <title>Formulaire de contact</title>
+  </head>
+
+  <body>
+    <div class="C1">
+        <form name="reservation" action="base.php" method="post" class="C2">
+          <p>
+            <label for="q1">Nom pour la réservation</label>
+            <input type="text" id="q1" required name="nom">
+          </p>
+          <p>
+            <input type="radio" required name="horaire" id="r1" value="Midi"><label for="r1">Midi</label>
+            <input type="radio" required name="horaire" id="r2" value="Soir"><label for="r2">Soir</label>
+          </p>
+          <p>
+            <label for="q3">Quand souhaitez vous réserver?</label>
+            <input type="date" id="q3" required name="date">
+          </p>
+          <p>
+            <label for="q4">Pour combien de personne?</label>
+            <input type="number" min="1" max="8" step="1" id="q4" required name="nombre">
+          </p>
+          <p>
+            <label for="q5">Votre adresse électronique ?</label>
+            <input type="email" id="q5" required name="email">
+          </p>
+          <p>
+            <label for="q6">Laissez un message</label><br />
+            <textarea id="q6" name="msg" maxlength="140" rows="5"></textarea>
+          </p>
+          <p>
+            <input type="submit"  value="Réserver">
+          </p>
+        </form>
+  </div>
+  </body>
+
+</html>
