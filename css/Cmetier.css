@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: calc(400vh / 1024) none #19FF81;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url('font/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
+}
+
+body {
+    background-color: black;
+    background-image: url(BG.png);
+    font-family: 'Inconsolata', sans-serif;
+    background-size: cover;
+    font-weight:bold;
+    color:#19FF81;
+    font-size: calc(3400vh / 1024);
+  }
+
+
+/* BODY - Box */
+
+  .metier, .FE, .BE, .box {
+    display: flex;
+  }
+
+  .metier {
+    padding-top: calc(7250vh / 1024);
+    padding-bottom: calc(7250vh / 1024);
+
+    height: calc(55000vh / 1024);
+    width: calc(105700vh / 1024);
+    margin: auto;
+  }
+
+  .FE {
+    border-left-style: solid;
+    box-sizing: border-box;
+  }
+
+  .FE, .BE  {
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .box img, .box2 img {
+    height: calc(4600vh / 1024);
+    width: calc(5800vh / 1024);
+
+  }
+
+  .box {
+    height: calc(10000vh / 1024);
+    width: 100%;
+  }
+
+  .box2 {
+    height: calc(15000vh / 1024);
+    width: 100%;
+  }
+
+  .box div, .box2div {
+    flex: auto;
+
+  }
+
+
+/* BODY - Responsive */
+
+@media screen and (max-aspect-ratio: 11/10) {
+
+  .alt {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(19, 255, 81, 0.1)
+  }
+
+  .metier {
+    width: 300px;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height: auto;
+    background-image: none;
+  }
+
+  .metier div {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .box {
+    height: calc(10000vh / 1024);
+    font-size: 50px;
+    flex: none;
+    align-items: center;
+  }
+
+}

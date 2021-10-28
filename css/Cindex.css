@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: calc(400vh / 1024) none #19FF81;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url('font/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
+}
+
+body {
+    background-color: black;
+    background-image: url(BG.png);
+    font-family: 'Inconsolata', sans-serif;
+    background-size: cover;
+    font-weight:bold;
+    color:#19FF81;
+    font-size: calc(3400vh / 1024);
+  }
+
+
+/* BODY - Box */
+
+  .boy, .box, .genre {
+    display: flex;
+  }
+
+  .boy {
+    height: calc(39000vh / 1024);
+    width: calc(100000vh / 1024);
+    margin: auto;
+    background-image: url(vaultboy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    height: 50%;
+    width: 50%;
+  }
+
+  .loisir, .nom {
+    margin-top: calc(-3400vh / 1024);
+  }
+
+  .genre {
+    height: 30%;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .age {
+    align-items: center;
+  }
+
+
+/* BODY - Placement texte */
+
+  .loisir div {
+    padding-top: calc(2000vh / 1024);
+    padding-left: calc(18000vh / 1024);
+    text-align: left;
+  }
+
+  .nom div {
+    padding-left: calc(12000vh / 1024);
+    text-align: left;
+  }
+
+  .age div {
+    padding-top: calc(10000vh / 1024);
+    padding-left: calc(18000vh / 1024);
+    text-align: left;
+  }
+
+  .prenom div {
+    padding-left: calc(25000vh / 1024);
+    text-align: center;
+  }
+
+  .genre div {
+    flex: auto;
+    padding-bottom: calc(1000vh / 1024);
+    padding-left: calc(28000vh / 1024);
+    text-align: center;
+  }
+
+/* Correction pour centrer (provient du header à l'origine) */
+
+.alt {
+  padding-top: calc(16500vh / 1024) ;
+}
+
+
+.colext2 {
+  padding-top: calc(14000vh / 1024) ;
+}
+
+/* BODY - Responsive */
+
+@media screen and (max-aspect-ratio: 11/10) {
+
+  .alt {
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(19, 255, 81, 0.1)
+  }
+
+  .boyaltgau, .boyaltdroi {
+    flex: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .boyaltgau {
+    background-image: url(vaultgau.png);
+    background-position: left;
+  }
+
+  .boyaltdroi {
+    background-image: url(vaultdroi.png);
+    background-position: right;
+  }
+
+  .boy {
+    width: 300px;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height: auto;
+    background-image: none;
+  }
+
+  .boy div {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .box, .genre {
+    height: calc(10000vh / 1024);
+    font-size: 50px;
+    flex: none;
+    align-items: center;
+  }
+
+  .nom {
+    order: 1;
+  }
+
+  .prenom {
+    order: 2;
+  }
+
+  .genre {
+    order: 3;
+  }
+
+  .age {
+    order: 4;
+  }
+
+  .loisir {
+    order: 5;
+  }
+}
