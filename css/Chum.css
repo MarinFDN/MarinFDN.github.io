@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: calc(400vh / 1024) none #19FF81;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url('font/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
+}
+
+body {
+    background-color: black;
+    background-image: url(BG.png);
+    font-family: 'Inconsolata', sans-serif;
+    background-size: cover;
+    font-weight:bold;
+    color:#19FF81;
+    font-size: calc(3400vh / 1024);
+  }
+
+  
+/* BODY - Box */
+
+.main {
+  display: flex;
+}
+
+.main {
+  padding-top: calc(7250vh / 1024);
+  padding-bottom: calc(7250vh / 1024);
+  height: calc(55000vh / 1024);
+  width: calc(110000vh / 1024);
+  margin: auto;
+}
+
+
+
+/* BODY - Responsive */
+
+@media screen and (max-aspect-ratio: 11/10) {
+
+.main {
+  padding: 0 10vw;
+  width: 80vw;
+  background-color: rgba(19, 255, 81, 0.1)
+}
+
+
+}
